@@ -9,7 +9,7 @@ module.exports = {
     title: `ActiveEye Document Starter`,
     description: `Setting up a Gatsby site for the ActiveEye Document Site`,
     author: `https://github.com/jensendesign`,
-    siteUrl: `URL here`,
+    siteUrl: `https://github.com/jensendesign`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
