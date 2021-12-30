@@ -1,5 +1,6 @@
-import React from "react"
+import React, { Fragment } from "react"
 import styled from "styled-components"
+import GlobalReset from "../styles/globalReset"
 
 // ----- Styled Components -----
 const Container = styled.div`
@@ -37,15 +38,18 @@ const ArticleWrap = styled.article`
 
 export default function Home() {
   return (
-    <Container>
-      <SidebarWrap>Sidebar Area</SidebarWrap>
-      <MainWrap>
-        <HeaderWrap>Header Area</HeaderWrap>
-        <ContentWrap>
-          <ArticleWrap>Hello world, from Bill!</ArticleWrap>
-        </ContentWrap>
-        <FooterWrap>Footer Area</FooterWrap>
-      </MainWrap>
-    </Container>
+    <Fragment>
+      <GlobalReset />
+      <Container>
+        <SidebarWrap>Sidebar Area</SidebarWrap>
+        <MainWrap>
+          <HeaderWrap>Header Area</HeaderWrap>
+          <ContentWrap>
+            <ArticleWrap>Hello world, from Bill!</ArticleWrap>
+          </ContentWrap>
+          <FooterWrap>Footer Area</FooterWrap>
+        </MainWrap>
+      </Container>
+    </Fragment>
   )
 }
