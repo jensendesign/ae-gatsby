@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     // 'gatsby-plugin-css-customs',
     `gatsby-plugin-image`,
     {
