@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/ae-gatsby",
   siteMetadata: {
     title: `ActiveEye Document Starter`,
     description: `Setting up a Gatsby site for the ActiveEye Document Site`,
