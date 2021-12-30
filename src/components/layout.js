@@ -22,7 +22,8 @@ const Container = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: row;
-  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
 `
 const SidebarWrap = styled.div`
   background: #d7e8d4;
@@ -35,7 +36,7 @@ const MainWrap = styled.div`
 `
 const HeaderWrap = styled.div`
   background: yellowgreen;
-  height: 20vh;
+  height: 75px;
 `
 const ContentWrap = styled.div`
   display: flex;
@@ -43,11 +44,11 @@ const ContentWrap = styled.div`
 `
 const FooterWrap = styled.div`
   background: yellowgreen;
-  height: 20vh;
+  height: 75px;
 `
 const ArticleWrap = styled.article`
   flex: 4;
-  min-height: 60vh;
+  min-height: 86vh;
 `
 
 const Layout = ({ children }) => {
@@ -70,7 +71,10 @@ const Layout = ({ children }) => {
       <Container>
         <SidebarWrap>Sidebar Area</SidebarWrap>
         <MainWrap>
-          <HeaderWrap>Header Area</HeaderWrap>
+          <HeaderWrap>
+            siteTitle={data.site.siteMetadata.title}
+            siteDescription={data.site.siteMetadata.description}
+          </HeaderWrap>
           <ContentWrap>
             <ArticleWrap>{children}</ArticleWrap>
           </ContentWrap>
